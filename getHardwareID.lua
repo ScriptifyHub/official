@@ -1,3 +1,5 @@
+local RbxAnalyticsService = game:GetService("RbxAnalyticsService")
+
 local function getHWID()
   local success, hwid = pcall(function()
       return RbxAnalyticsService:GetClientId()
