@@ -1,3 +1,8 @@
+local Game = nil
+local function returnServices(g)
+  game = g
+end
+
 return {
   RbxAnalyticsService = game:GetService("RbxAnalyticsService"),
   ReplicatedStorage = game:GetService("ReplicatedStorage"),
@@ -6,6 +11,6 @@ return {
   UIS = game:GetService("UserInputService"),
   Players = game:GetService("Players"),
   Camera = workspace.CurrentCamera,
-  --Player = Players.LocalPlayer,
+  Player = Players.LocalPlayer,
   bv, bg
 }
