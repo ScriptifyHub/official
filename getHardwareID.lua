@@ -1,12 +1,11 @@
-local RAS = game:GetService("RbxAnalyticsService")
-local function gH()
-  local s, h = pcall(function() 
-      return RAS:GetClientId()
+local function getHWID()
+  local success, hwid = pcall(function()
+      return RbxAnalyticsService:GetClientId()
     end)
-  if s and h and h ~= "" then
+  if success and hwid and hwid ~= "" then
     return hwid
   else
-    return false
-  end
+    return false 
+  end 
 end
-return gH
+return getHWID
