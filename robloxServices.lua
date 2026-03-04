@@ -6,6 +6,6 @@ return {
   UIS = game:GetService("UserInputService"),
   Players = game:GetService("Players"),
   Camera = workspace.CurrentCamera,
-  Player = Players.LocalPlayer,
+  --Player = Players.LocalPlayer,
   bv, bg
 }
