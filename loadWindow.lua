@@ -1,5 +1,5 @@
 local function loadWindow(R)
-  R:CreateWindow({
+  return R:CreateWindow({
    Name = "Rayfield Example Window",
    Icon = 0,
    LoadingTitle = "Rayfield Interface Suite",
