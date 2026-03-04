@@ -1,8 +1,8 @@
-local Game = nil
+local game = nil
 local function returnServices(g)
   game = g
 end
-
+returnServices()
 
 local p = game:GetService("Players")
 return {
