@@ -6,9 +6,8 @@ local function returnServices(game, workspace)
     VirtualUser = game:GetService("VirtualUser"),
     UIS = game:GetService("UserInputService"),
     Camera = workspace.CurrentCamera,
-    Players = game:GetService("Players")
+    Players = game:GetService("Players"),
     Player = game:GetService("Players").LocalPlayer
-    bv, bg
   }
   return Services
 end
