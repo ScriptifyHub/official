@@ -4,7 +4,6 @@ local function returnServices(g)
 end
 returnServices()
 
-local p = game:GetService("Players")
 return {
   RbxAnalyticsService = game:GetService("RbxAnalyticsService"),
   ReplicatedStorage = game:GetService("ReplicatedStorage"),
@@ -13,6 +12,6 @@ return {
   UIS = game:GetService("UserInputService"),
   Camera = workspace.CurrentCamera,
   Players = game:GetService("Players")
-  Player = p.LocalPlayer,
+  Player = game:GetService("Players").LocalPlayer
   bv, bg
 }
